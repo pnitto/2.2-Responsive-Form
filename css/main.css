@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/* --Colors
+top button color -#B32E2E */
+body {
+  background-image: url("../images/bg.jpg"); }
+
+.subscribe {
+  color: white;
+  float: right;
+  margin-top: -4%;
+  margin-right: 40%; }
+
+.button-list {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none; }
+  .button-list::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .button:last-child {
+    margin-right: 0; }
+
+.buttons {
+  height: 44px;
+  width: 100%;
+  background-color: #B32E2E; }
+
+.top-right-buttons {
+  margin-top: 80px; }
+
+.top-picture {
+  border: 1px solid black;
+  height: 351px;
+  background-image: url("../images/top-image.png");
+  background-size: cover;
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-left: 8%; }
+  .top-picture::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .top-picture:last-child {
+    margin-right: 0; }
+
+.three-dots-middle {
+  border: 1px solid black;
+  margin-top: 30%; }
+
+.dots-middle {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 39%; }
+  .dots-middle::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.dot {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  color: white; }
+  .dot:last-child {
+    margin-right: 0; }
+
+.articles {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto; }
+  .articles::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: white;
+  height: 352px; }
+  .article:last-child {
+    margin-right: 0; }
+
+.read-more-button {
+  color: red;
+  border: none;
+  background-color: white;
+  margin-left: 37%; }
+
+.boarder-pics {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  height: 474px; }
+  .boarder-pics::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.boarder-1 {
+  background-image: url("../images/sk8er-4.png"); }

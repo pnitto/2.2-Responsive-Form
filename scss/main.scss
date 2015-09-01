@@ -1,0 +1,79 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+/* --Colors
+top button color -#B32E2E */
+
+body {
+  background-image: url("../images/bg.jpg");
+}
+
+.subscribe {
+  color: white;
+  float: right;
+  margin-top: -4%;
+  margin-right: 40%;
+}
+.button-list {
+  @include outer-container(1030px);
+  list-style-type: none;
+}
+.button {
+  @include span-columns(3);
+}
+.buttons {
+  height: 44px;
+  width: 100%;
+  background-color: #B32E2E;
+}
+.top-right-buttons {
+  margin-top: 80px;
+}
+
+.top-picture {
+  border: 1px solid black;
+  height: 351px;
+  background-image: url("../images/top-image.png");
+  background-size: cover;
+  @include outer-container(1030px);
+  @include span-columns(12);
+  margin-left: 8%;
+}
+
+.three-dots-middle {
+  border: 1px solid black;
+  margin-top: 30%;
+}
+.dots-middle {
+  @include outer-container(1030px);
+  margin-left: 39%;
+}
+.dot {
+  @include span-columns(1);
+  color: white;
+}
+.articles {
+  @include outer-container(1030px);
+
+}
+.article {
+  @include span-columns(4);
+  background-color: white;
+  height: 352px
+      }
+.read-more-button {
+  color: red;
+  border: none;
+  background-color: white;
+  margin-left: 37%;
+
+}
+.boarder-pics {
+  @include outer-container(1030px);
+  border: 1px solid white;
+  height: 474px;
+}
+.boarder-1 {
+  background-image: url('../images/sk8er-4.png');
+}
