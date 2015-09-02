@@ -43,29 +43,29 @@ body {
 .top-right-buttons {
   margin-top: 80px; }
 
+.top-pic-container {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto; }
+  .top-pic-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .top-picture {
   border: 1px solid black;
   height: 351px;
   background-image: url("../images/top-image.png");
   background-size: cover;
-  max-width: 1030px;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  margin-left: 8%; }
-  .top-picture::after {
-    clear: both;
-    content: "";
-    display: table; }
+  width: 100%; }
   .top-picture:last-child {
     margin-right: 0; }
 
 .three-dots-middle {
-  border: 1px solid black;
-  margin-top: 30%; }
+  border: 1px solid black; }
 
 .dots-middle {
   max-width: 1030px;
@@ -115,12 +115,64 @@ body {
   max-width: 1030px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid white;
-  height: 474px; }
+  border: 1px solid lime;
+  height: 470px; }
   .boarder-pics::after {
     clear: both;
     content: "";
     display: table; }
 
 .boarder-1 {
-  background-image: url("../images/sk8er-4.png"); }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../images/sk8er-4.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white; }
+  .boarder-1:last-child {
+    margin-right: 0; }
+
+.boarder-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../images/sk8er-3.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white; }
+  .boarder-2:last-child {
+    margin-right: 0; }
+
+.boarder-3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../images/sk8er-2.png");
+  background-size: cover;
+  height: 470px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  float: right;
+  margin-right: 0; }
+  .boarder-3:last-child {
+    margin-right: 0; }
+
+.boarder-4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  background-image: url("../images/sk8er-1.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  margin-top: 2.5%; }
+  .boarder-4:last-child {
+    margin-right: 0; }

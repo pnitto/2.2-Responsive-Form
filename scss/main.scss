@@ -30,20 +30,20 @@ body {
 .top-right-buttons {
   margin-top: 80px;
 }
+.top-pic-container {
+  @include outer-container(1030px);
 
+}
 .top-picture {
   border: 1px solid black;
   height: 351px;
   background-image: url("../images/top-image.png");
   background-size: cover;
-  @include outer-container(1030px);
   @include span-columns(12);
-  margin-left: 8%;
 }
 
 .three-dots-middle {
   border: 1px solid black;
-  margin-top: 30%;
 }
 .dots-middle {
   @include outer-container(1030px);
@@ -71,9 +71,42 @@ body {
 }
 .boarder-pics {
   @include outer-container(1030px);
-  border: 1px solid white;
-  height: 474px;
+  border: 1px solid lime;
+  height: 470px;
 }
 .boarder-1 {
-  background-image: url('../images/sk8er-4.png');
+  @include span-columns(4);
+  background-image: url("../images/sk8er-4.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+.boarder-2 {
+  @include span-columns(4);
+  background-image: url("../images/sk8er-3.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+
+}
+.boarder-3 {
+  @include span-columns(4);
+  background-image: url("../images/sk8er-2.png");
+  background-size: cover;
+  height: 470px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  float: right;
+  margin-right: 0;
+}
+.boarder-4 {
+  @include span-columns(8);
+  background-image: url("../images/sk8er-1.png");
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  margin-top: 2.5%;
 }
