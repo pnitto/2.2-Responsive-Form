@@ -7,6 +7,7 @@ top button color -#B32E2E */
 
 body {
   background-image: url("../images/bg.jpg");
+  background-position: center;
 }
 
 .subscribe {
@@ -38,6 +39,7 @@ body {
   border: 1px solid black;
   height: 351px;
   background-image: url("../images/top-image.png");
+  background-position: center;
   background-size: cover;
   @include span-columns(12);
 }
@@ -77,6 +79,7 @@ body {
 .boarder-1 {
   @include span-columns(4);
   background-image: url("../images/sk8er-4.png");
+  background-position: center;
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
@@ -85,6 +88,7 @@ body {
 .boarder-2 {
   @include span-columns(4);
   background-image: url("../images/sk8er-3.png");
+  background-position: center;
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
@@ -94,6 +98,7 @@ body {
 .boarder-3 {
   @include span-columns(4);
   background-image: url("../images/sk8er-2.png");
+  background-position: 78%;
   background-size: cover;
   height: 470px;
   background-repeat: no-repeat;
@@ -104,6 +109,7 @@ body {
 .boarder-4 {
   @include span-columns(8);
   background-image: url("../images/sk8er-1.png");
+  background-position: center;
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
@@ -148,4 +154,17 @@ body {
 .submit-button {
   width: 25%;
   height: 38px;
+  background-color: red;
+  color: white;
+  margin-right: 0;
+}
+.social-button-list {
+  list-style-type: none;
+}
+.social {
+  float: left;
+}
+.social-button {
+  height: 32px;
+  width: 32px;
 }
