@@ -15,14 +15,16 @@ body {
 .subscribe {
   color: white;
   float: right;
-  margin-top: -4%;
-  margin-right: 40%; }
+  margin-right: 40%;
+  text-decoration: none;
+  margin-top: -4%; }
 
 .button-list {
   max-width: 1030px;
   margin-left: auto;
   margin-right: auto;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
   .button-list::after {
     clear: both;
     content: "";
@@ -37,9 +39,12 @@ body {
     margin-right: 0; }
 
 .buttons {
-  height: 44px;
   width: 100%;
-  background-color: #B32E2E; }
+  height: 3em;
+  background-color: #B32E2E;
+  padding-left: 0;
+  color: white;
+  font-size: 14px; }
 
 .top-right-buttons {
   margin-top: 80px; }
@@ -53,8 +58,18 @@ body {
     content: "";
     display: table; }
 
+.powell-operalta {
+  height: 240px;
+  background-image: url("../images/peralta-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25.75em;
+  margin-top: 4%;
+  position: absolute;
+  margin-left: 13%; }
+
 .top-picture {
-  border: 1px solid black;
+  border: 10px solid white;
   height: 351px;
   background-image: url("../images/top-image.png");
   background-position: center;
@@ -157,14 +172,14 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  margin-right: 0;
   background-image: url("../images/sk8er-2.png");
   background-position: 78%;
   background-size: cover;
   height: 470px;
   background-repeat: no-repeat;
   border: 2px solid white;
-  float: right;
-  margin-right: 0; }
+  float: right; }
   .boarder-3:last-child {
     margin-right: 0; }
 
@@ -202,7 +217,7 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 7.45162%; }
+  width: 7.87811%; }
   .board:last-child {
     margin-right: 0; }
 
@@ -215,7 +230,8 @@ body {
   margin-right: auto;
   height: 360px;
   border: 1px solid black;
-  background-color: white; }
+  background-color: white;
+  padding: 2%; }
   .bottom-section::after {
     clear: both;
     content: "";
@@ -252,11 +268,50 @@ body {
   margin-right: 0; }
 
 .social-button-list {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: -8%; }
 
 .social {
-  float: left; }
+  float: left;
+  padding-left: 1%; }
 
 .social-button {
-  height: 32px;
-  width: 32px; }
+  height: 2.5em;
+  width: 2.5em; }
+
+.ls-social-button {
+  display: inline;
+  position: absolute;
+  right: 14.2%;
+  top: -2.5%; }
+
+.social-btns {
+  display: inline-block; }
+
+.soc-btn {
+  height: 65px;
+  width: 65px; }
+
+.fbook {
+  background-color: #445897; }
+
+.twitter {
+  background-color: #6A8DC7; }
+
+.youtube {
+  background-color: #B32E2E; }
+
+.wifi {
+  background-color: #CC9034; }
+
+.facebook {
+  background-color: #505050; }
+
+.tweet {
+  background-color: #797979; }
+
+.tubeyou {
+  background-color: #747474; }
+
+.whyfy {
+  background-color: #AFAFAF; }
