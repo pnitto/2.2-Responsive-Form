@@ -72,7 +72,7 @@ body {
 .boarder-pics {
   @include outer-container(1030px);
   border: 1px solid lime;
-  height: 470px;
+  height: 530px;
 }
 .boarder-1 {
   @include span-columns(4);
@@ -109,4 +109,43 @@ body {
   background-repeat: no-repeat;
   border: 2px solid white;
   margin-top: 2.5%;
+}
+.sk8-boards {
+  @include outer-container(1030px);
+  height: 300px;
+  border: 1px solid red;
+  background-color: #FCFCFC;
+
+}
+.board-list {
+  list-style-type: none;
+}
+.board {
+  @include span-columns(1.15);
+}
+.sk8-image {
+  border-radius: 25%;
+}
+.bottom-section {
+  @include outer-container(1030px);
+  height: 360px;
+  border: 1px solid black;
+  background-color: white;
+}
+.contact-us {
+  @include span-columns(6);
+}
+.bottom-form {
+  @include span-columns(6);
+  width: 100%;
+}
+.name-email {
+  height: 40px;
+}
+.message {
+  height: 110px;
+}
+.submit-button {
+  width: 25%;
+  height: 38px;
 }
