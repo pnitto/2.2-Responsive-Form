@@ -1,21 +1,39 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-
+$mobile: new breakpoint(max-width 740px 4);
 /* --Colors
 top button color -#B32E2E */
 
 body {
   background-image: url("../images/bg.jpg");
   background-position: center;
-}
+  background-size: cover;
+  max-width: 2000px;
 
+    }
+  body::after {
+    content:"";
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #505050;
+    opacity: .7;
+    z-index: -1;
+  }
+  .container {
+    @include outer-container(1030px);
+  }
 .subscribe {
   color: white;
   float: right;
   margin-right: 40%;
   text-decoration: none;
   margin-top: -4%;
+  font-family: arial;
 }
 .button-list {
   @include outer-container(1030px);
@@ -61,38 +79,43 @@ body {
   background-size: cover;
   @include span-columns(12);
 }
-
-.three-dots-middle {
-  border: 1px solid black;
-}
 .dots-middle {
   @include outer-container(1030px);
   margin-left: 39%;
 }
 .dot {
   @include span-columns(1);
+  @include pad(38 right);
   color: white;
+
 }
 .articles {
   @include outer-container(1030px);
+  margin-bottom: 4%;
 
 }
 .article {
   @include span-columns(4);
+  @include pad();
   background-color: white;
-  height: 352px
-      }
+  height: em(370);
+  font-family: "Arial";
+  font-size: 16px;
+}
+.date {
+  color: #BCBCBC;
+}
 .read-more-button {
   color: red;
   border: none;
   background-color: white;
   margin-left: 37%;
+  letter-spacing: 1px;
 
 }
 .boarder-pics {
   @include outer-container(1030px);
-  border: 1px solid lime;
-  height: 530px;
+  height: 513px;
 }
 .boarder-1 {
   @include span-columns(4);
@@ -101,7 +124,7 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white;
+  border: 4px solid white;
 }
 .boarder-2 {
   @include span-columns(4);
@@ -110,7 +133,7 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white;
+  border: 4px solid white;
 
 }
 .boarder-3 {
@@ -121,7 +144,7 @@ body {
   background-size: cover;
   height: 470px;
   background-repeat: no-repeat;
-  border: 2px solid white;
+  border: 4px solid white;
   float: right;
 }
 .boarder-4 {
@@ -131,13 +154,12 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white;
-  margin-top: 2.5%;
+  border: 4px solid white;
+  margin-top: 2%;
 }
 .sk8-boards {
   @include outer-container(1030px);
   height: 300px;
-  border: 1px solid red;
   background-color: #FCFCFC;
 
 }
@@ -146,24 +168,34 @@ body {
 }
 .board {
   @include span-columns(1.2);
+  margin-top: 2%;
 }
 .sk8-image {
   border-radius: 25%;
 }
 .bottom-section {
   @include outer-container(1030px);
+  @include pad();
   height: 360px;
   border: 1px solid black;
   background-color: white;
-  padding: 2%;
+  font-family: "Arial";
+  margin-top:3%;
+
+}
+fieldset {
+  border: none;
 }
 .contact-us {
-  @include span-columns(6);
+  @include span-columns(6.5);
 }
 .bottom-form {
-  @include span-columns(6);
+  @include span-columns(5.5);
+  margin-top: 4%;
   width: 100%;
-}
+  box-shadow: 10px 10px 5px #888888;
+  border: 1px solid #888888;
+  }
 .name-email {
   height: 40px;
 }
@@ -173,9 +205,10 @@ body {
 .submit-button {
   width: 25%;
   height: 38px;
-  background-color: red;
+  background-color: #B43236;
   color: white;
-  margin-right: 0;
+  margin-left: 73.5%;
+  margin-top: 1.5%;
 }
 .social-button-list {
   list-style-type: none;
@@ -183,7 +216,7 @@ body {
 }
 .social {
   float: left;
-  padding-left: 1%;
+  padding-right: 0.5%;
 }
 .social-button {
   height: em(40);
@@ -226,4 +259,47 @@ body {
 }
 .whyfy {
   background-color:#AFAFAF;
+}
+input {
+  @include placeholder {
+    padding-left:2%;
+
+  }
+}
+.message {
+  @include placeholder {
+    position: relative;
+    top: -35%;
+    right: 0%;
+
+  }
+}
+.skater-button {
+  height: 100px;
+  width: 225px;
+  background-color:#B32E2E;
+  color: white;
+  font-size: 15px;
+
+}
+.skateboarder-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 68%;
+  margin-left: -2%;
+
+  @include media(789px) {
+    @include span-columns(1);
+  }
+
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 51px 0 51px 30px;
+  border-color: transparent transparent transparent #B32E2E;
+  margin-left: 100%;
+  margin-top: -45%;
 }

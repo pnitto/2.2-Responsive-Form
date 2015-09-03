@@ -10,14 +10,38 @@ html {
 top button color -#B32E2E */
 body {
   background-image: url("../images/bg.jpg");
-  background-position: center; }
+  background-position: center;
+  background-size: cover;
+  max-width: 2000px; }
+
+body::after {
+  content: "";
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #505050;
+  opacity: .7;
+  z-index: -1; }
+
+.container {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .subscribe {
   color: white;
   float: right;
   margin-right: 40%;
   text-decoration: none;
-  margin-top: -4%; }
+  margin-top: -4%;
+  font-family: arial; }
 
 .button-list {
   max-width: 1030px;
@@ -81,9 +105,6 @@ body {
   .top-picture:last-child {
     margin-right: 0; }
 
-.three-dots-middle {
-  border: 1px solid black; }
-
 .dots-middle {
   max-width: 1030px;
   margin-left: auto;
@@ -99,6 +120,7 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 6.17215%;
+  padding: 38 right;
   color: white; }
   .dot:last-child {
     margin-right: 0; }
@@ -106,7 +128,8 @@ body {
 .articles {
   max-width: 1030px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 4%; }
   .articles::after {
     clear: both;
     content: "";
@@ -117,23 +140,29 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  padding: 2.35765%;
   background-color: white;
-  height: 352px; }
+  height: 23.125em;
+  font-family: "Arial";
+  font-size: 16px; }
   .article:last-child {
     margin-right: 0; }
+
+.date {
+  color: #BCBCBC; }
 
 .read-more-button {
   color: red;
   border: none;
   background-color: white;
-  margin-left: 37%; }
+  margin-left: 37%;
+  letter-spacing: 1px; }
 
 .boarder-pics {
   max-width: 1030px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid lime;
-  height: 530px; }
+  height: 513px; }
   .boarder-pics::after {
     clear: both;
     content: "";
@@ -149,7 +178,7 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white; }
+  border: 4px solid white; }
   .boarder-1:last-child {
     margin-right: 0; }
 
@@ -163,7 +192,7 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white; }
+  border: 4px solid white; }
   .boarder-2:last-child {
     margin-right: 0; }
 
@@ -178,7 +207,7 @@ body {
   background-size: cover;
   height: 470px;
   background-repeat: no-repeat;
-  border: 2px solid white;
+  border: 4px solid white;
   float: right; }
   .boarder-3:last-child {
     margin-right: 0; }
@@ -193,8 +222,8 @@ body {
   background-size: cover;
   height: 224px;
   background-repeat: no-repeat;
-  border: 2px solid white;
-  margin-top: 2.5%; }
+  border: 4px solid white;
+  margin-top: 2%; }
   .boarder-4:last-child {
     margin-right: 0; }
 
@@ -203,7 +232,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  border: 1px solid red;
   background-color: #FCFCFC; }
   .sk8-boards::after {
     clear: both;
@@ -217,7 +245,8 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 7.87811%; }
+  width: 7.87811%;
+  margin-top: 2%; }
   .board:last-child {
     margin-right: 0; }
 
@@ -228,20 +257,25 @@ body {
   max-width: 1030px;
   margin-left: auto;
   margin-right: auto;
+  padding: 2.35765%;
   height: 360px;
   border: 1px solid black;
   background-color: white;
-  padding: 2%; }
+  font-family: "Arial";
+  margin-top: 3%; }
   .bottom-section::after {
     clear: both;
     content: "";
     display: table; }
 
+fieldset {
+  border: none; }
+
 .contact-us {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 53.08608%; }
   .contact-us:last-child {
     margin-right: 0; }
 
@@ -249,8 +283,11 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  width: 100%; }
+  width: 44.55627%;
+  margin-top: 4%;
+  width: 100%;
+  box-shadow: 10px 10px 5px #888888;
+  border: 1px solid #888888; }
   .bottom-form:last-child {
     margin-right: 0; }
 
@@ -263,9 +300,10 @@ body {
 .submit-button {
   width: 25%;
   height: 38px;
-  background-color: red;
+  background-color: #B43236;
   color: white;
-  margin-right: 0; }
+  margin-left: 73.5%;
+  margin-top: 1.5%; }
 
 .social-button-list {
   list-style-type: none;
@@ -273,7 +311,7 @@ body {
 
 .social {
   float: left;
-  padding-left: 1%; }
+  padding-right: 0.5%; }
 
 .social-button {
   height: 2.5em;
@@ -315,3 +353,66 @@ body {
 
 .whyfy {
   background-color: #AFAFAF; }
+
+input::-webkit-input-placeholder {
+  padding-left: 2%; }
+
+input::-moz-placeholder {
+  padding-left: 2%; }
+
+input:-moz-placeholder {
+  padding-left: 2%; }
+
+input:-ms-input-placeholder {
+  padding-left: 2%; }
+
+.message::-webkit-input-placeholder {
+  position: relative;
+  top: -35%;
+  right: 0%; }
+
+.message::-moz-placeholder {
+  position: relative;
+  top: -35%;
+  right: 0%; }
+
+.message:-moz-placeholder {
+  position: relative;
+  top: -35%;
+  right: 0%; }
+
+.message:-ms-input-placeholder {
+  position: relative;
+  top: -35%;
+  right: 0%; }
+
+.skater-button {
+  height: 100px;
+  width: 225px;
+  background-color: #B32E2E;
+  color: white;
+  font-size: 15px; }
+
+.skateboarder-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 68%;
+  margin-left: -2%; }
+  @media screen and (min-width: 789px) {
+    .skateboarder-button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 6.17215%; }
+      .skateboarder-button:last-child {
+        margin-right: 0; } }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 51px 0 51px 30px;
+  border-color: transparent transparent transparent #B32E2E;
+  margin-left: 100%;
+  margin-top: -45%; }
