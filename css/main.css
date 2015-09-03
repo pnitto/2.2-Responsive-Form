@@ -147,6 +147,16 @@ body::after {
   font-size: 16px; }
   .article:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 740px) {
+    .article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 3%; }
+      .article:last-child {
+        margin-right: 0; } }
 
 .date {
   color: #BCBCBC; }
@@ -394,14 +404,11 @@ input:-ms-input-placeholder {
   font-size: 15px; }
 
 .skateboarder-button {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
-  margin-top: 68%;
-  margin-left: -2%; }
-  @media screen and (min-width: 789px) {
-    .skateboarder-button {
-      position: none; } }
+  margin-top: -84%;
+  margin-left: -5%; }
 
 .triangle {
   width: 0;
@@ -409,5 +416,5 @@ input:-ms-input-placeholder {
   border-style: solid;
   border-width: 51px 0 51px 30px;
   border-color: transparent transparent transparent #B32E2E;
-  margin-left: 100%;
-  margin-top: -45%; }
+  margin-left: 14%;
+  margin-top: -6.2%; }
