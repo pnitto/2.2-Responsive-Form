@@ -401,12 +401,7 @@ input:-ms-input-placeholder {
   margin-left: -2%; }
   @media screen and (min-width: 789px) {
     .skateboarder-button {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 6.17215%; }
-      .skateboarder-button:last-child {
-        margin-right: 0; } }
+      position: none; } }
 
 .triangle {
   width: 0;

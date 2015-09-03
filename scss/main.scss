@@ -1,7 +1,7 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-$mobile: new breakpoint(max-width 740px 4);
+$mobile: new-breakpoint(max-width 740px 4);
 /* --Colors
 top button color -#B32E2E */
 
@@ -92,6 +92,9 @@ body {
 .articles {
   @include outer-container(1030px);
   margin-bottom: 4%;
+  @include media($mobile);
+    @include outer-container(798px);
+    @include span-columns(4);
 
 }
 .article {
@@ -101,7 +104,10 @@ body {
   height: em(370);
   font-family: "Arial";
   font-size: 16px;
+  @include media($mobile);
+    @include span-columns(1);
 }
+
 .date {
   color: #BCBCBC;
 }
@@ -280,7 +286,6 @@ input {
   background-color:#B32E2E;
   color: white;
   font-size: 15px;
-
 }
 .skateboarder-button {
   position: absolute;
@@ -288,12 +293,12 @@ input {
   top: 0;
   margin-top: 68%;
   margin-left: -2%;
-
-  @include media(789px) {
-    @include span-columns(1);
-  }
-
+  @include media($mobile); {
+    margin-top: 0;
+    margin-left:0;
+    }
 }
+
 .triangle {
   width: 0;
   height: 0;
